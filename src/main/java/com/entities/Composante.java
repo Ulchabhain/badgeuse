@@ -13,7 +13,7 @@ public class Composante {
     private Long Id;
     private String nomComposante;
 
-    @OneToMany(mappedBy = "responsable")
+    @OneToMany(mappedBy = "composante")
     private List<Responsable> responsables;
 
     @ManyToOne
