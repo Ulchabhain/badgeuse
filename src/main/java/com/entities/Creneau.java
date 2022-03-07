@@ -17,8 +17,8 @@ public class Creneau {
     private Type type;
 
     @ManyToOne
-    private Cours cours;
+    private Cours coursCre;
 
-    @OneToMany(mappedBy = "creneau")
-    private List<Seance_formation> seances;
+    @OneToMany(mappedBy = "creneauSea")
+    private List<Seance_formation> seancesCre;
 }

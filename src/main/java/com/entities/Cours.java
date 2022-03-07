@@ -13,9 +13,12 @@ public class Cours {
     private Long Id;
     private String intitule;
 
-    @ManyToMany
-    private List<FiliereLangue> filiereLangues;
+    @OneToMany(mappedBy = "coursVac")
+    private List<Vacataire> vacatairesCou;
 
-    @OneToMany(mappedBy = "cours")
-    private List<Creneau> creneaux;
+    @ManyToMany
+    private List<FiliereLangue> filiereLanguesCou;
+
+    @OneToMany(mappedBy = "coursCre")
+    private List<Creneau> creneauxCou;
 }

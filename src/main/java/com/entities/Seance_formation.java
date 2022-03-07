@@ -15,5 +15,8 @@ public class Seance_formation {
     private String commentaire;
 
     @ManyToOne
-    private Creneau creneau;
+    private Creneau creneauSea;
+
+    @ManyToOne
+    private Vacataire vacataireSea;
 }

@@ -14,9 +14,9 @@ public class FiliereLangue {
     private int codeFiliereLangue;
     private String nomFiliereLangue;
 
-    @OneToMany(mappedBy = "filiereLangue")
-    private List<Composante> composantes;
+    @ManyToOne
+    private Composante composanteFil;
 
     @ManyToMany
-    private List<Cours> cours;
+    private List<Cours> coursFil;
 }

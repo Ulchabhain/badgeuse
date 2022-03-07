@@ -13,9 +13,9 @@ public class Composante {
     private Long Id;
     private String nomComposante;
 
-    @OneToMany(mappedBy = "composante")
-    private List<Responsable> responsables;
+    @OneToMany(mappedBy = "composanteRes")
+    private List<Responsable> responsablesCom;
 
-    @ManyToOne
-    private FiliereLangue filiereLangue;
+    @OneToMany(mappedBy = "composanteFil")
+    private List<FiliereLangue> filiereLanguesCom;
 }

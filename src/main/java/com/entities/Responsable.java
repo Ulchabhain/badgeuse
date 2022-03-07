@@ -13,5 +13,5 @@ public class Responsable extends Utilisateur {
     private Long Id;
 
     @ManyToOne
-    private Composante composante;
+    private Composante composanteRes;
 }
